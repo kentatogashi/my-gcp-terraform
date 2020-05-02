@@ -6,7 +6,12 @@ variable "credential" {
 
 variable "project_name" {
   default = {
-    data = ""
+    data = "my-project"
   }
 }
 
+variable "region_name" {
+  default = {
+    data = "asia-northeast1"
+  }
+}
