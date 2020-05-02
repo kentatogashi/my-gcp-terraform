@@ -4,14 +4,10 @@ variable "credential" {
   }
 }
 
-variable "project_name" {
-  default = {
-    data = "my-project"
-  }
+variable "project" {
+  default = "my-project"
 }
 
-variable "region_name" {
-  default = {
-    data = "asia-northeast1"
-  }
+variable "region" {
+  default = "asia-northeast1" 
 }

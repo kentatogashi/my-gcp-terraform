@@ -1,10 +1,11 @@
 provider "google" {
   /*credentials = file(var.credential.data)*/
-  project = lookup(var.project_name, "data")
-  region = lookup(var.region_name, "data")
+  project = var.project
+  region = var.region
 }
 
 module "vpc" {
   source = "./modules/vpc"
+  region = var.region
 }
 

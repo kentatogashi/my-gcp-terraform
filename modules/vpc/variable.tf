@@ -1,6 +1,4 @@
 variable "vpc_name" {
-  default = {
-    data = "togashi-veri-vpc01"
-  }
+  default = "togashi-veri-vpc01"
 }
-
+variable "region" {}
