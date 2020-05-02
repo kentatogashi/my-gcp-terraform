@@ -16,3 +16,9 @@ module "storage" {
   env = var.env
   region = var.region
 }
+
+module "gce" {
+  source = "./components/gce"
+  env = var.env
+  region = var.region
+}
