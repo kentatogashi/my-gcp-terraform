@@ -1,4 +1,5 @@
-variable "vpc_name" {
-  default = "togashi-veri-vpc01"
+variable "env" {}
+variable "cidrs" {
+  type = list
 }
 variable "region" {}

@@ -8,6 +8,6 @@ variable "project" {
   default = "my-project"
 }
 
-variable "region" {
-  default = "asia-northeast1" 
-}
+variable "env" {}
+variable "region" {}
+variable "cidrs" {}

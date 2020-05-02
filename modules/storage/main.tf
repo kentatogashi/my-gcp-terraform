@@ -1,5 +1,5 @@
-resource "google_storage_bucket" "storage" {
-  name = var.bucket_name
+resource "google_storage_bucket" "bucket" {
+  name = "togashi-${var.env}-storage-bucket01"
   location = var.region
   storage_class = "REGIONAL"
 

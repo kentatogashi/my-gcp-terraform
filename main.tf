@@ -6,10 +6,13 @@ provider "google" {
 
 module "vpc" {
   source = "./modules/vpc"
+  env = var.env
   region = var.region
+  cidrs = var.cidrs
 }
 
 module "storage" {
   source = "./modules/storage"
+  env = var.env
   region = var.region
 }
