@@ -11,6 +11,12 @@ module "vpc" {
   cidrs = var.cidrs
 }
 
+module "firewall" {
+  source = "./components/firewall"
+  env = var.env
+  src_ips = var.src_ips
+}
+
 module "storage" {
   source = "./components/storage"
   env = var.env
