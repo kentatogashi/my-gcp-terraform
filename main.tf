@@ -4,6 +4,12 @@ provider "google" {
   region = var.region
 }
 
+terraform {
+  backend "gcs" {
+    bucket = "togashi-veri-storage-bucket01"
+  }
+}
+
 module "vpc" {
   source = "./components/vpc"
   env = var.env
