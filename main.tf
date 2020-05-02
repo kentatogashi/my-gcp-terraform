@@ -9,3 +9,7 @@ module "vpc" {
   region = var.region
 }
 
+module "storage" {
+  source = "./modules/storage"
+  region = var.region
+}
