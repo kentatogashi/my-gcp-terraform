@@ -35,6 +35,12 @@ module "gce" {
   region = var.region
 }
 
+module "gke" {
+  source = "./components/gke"
+  env = var.env
+  region = var.region
+}
+
 module "cloudsql" {
   source = "./components/cloudsql"
   env = var.env
