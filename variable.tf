@@ -11,4 +11,4 @@ variable "project" {
 variable "env" {}
 variable "region" {}
 variable "cidrs" {}
-valiable "src_ips" {}
+variable "src_ips" {}
